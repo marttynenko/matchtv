@@ -1,0 +1,161 @@
+header.header {
+	background: $dark;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+}
+
+.header-logo {
+	flex: 0 0 150px;
+	max-width: 150px;
+}
+.header-menu {
+	flex: 0 0 calc(100% - 300px);
+	max-width: calc(100% - 300px);
+	text-align: center;
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0px 12px;
+	}
+
+	a {
+		display: block;
+		height: 32px;
+		line-height: 32px;
+		@include fz(18);
+		color: #FFF;
+
+		&.active, &:hover {
+			color: $primary;
+		}
+	}
+
+	svg#{&}-icon {
+		display: none;
+		visibility: hidden;
+		width: 24px;
+		height: 24px;
+		margin: 0 auto;
+		fill: none;
+		stroke: #404040;
+		stroke-width: 1.5;
+	}
+
+	@media (min-width: 840px) {
+		li {
+			margin: 0px 18px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		max-width: 100%;
+		z-index: 49;
+		background: #fafafa;
+		box-shadow: 0px 2px 21px 2px rgba(225, 228, 228, 0.71);
+
+		ul {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		li {
+			width: 25%;
+			margin: 0;
+			padding: 0px 8px;
+		}
+
+		a {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 60px;
+			line-height: 1.1;
+			text-align: center;
+			@include fz(12);
+			color: $font;
+
+			&.active, &:hover {
+				color: $secondary;
+
+				svg.header-menu-icon {
+					stroke: $secondary;
+				}
+			}
+		}
+
+		svg#{&}-icon {
+			display: block;
+			visibility: visible;
+		}
+	}
+}
+
+.header-right {
+	flex: 0 0 150px;
+	max-width: 150px;
+	text-align: right;
+}
+
+.header-notify {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+
+	&-toggler {
+		position: relative;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+	}
+
+	&-indicator {
+		position: absolute;
+		right: 1px;
+		top: -3px;
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		background: $primary;
+		box-shadow: 0px 0px 0px 2px $dark;
+	}
+}
+.header-profile {
+	display: inline-block;
+	vertical-align: middle;
+
+	&-toggler {
+		position: relative;
+		padding-right: 24px;
+		cursor: pointer;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -9px;
+			width: 18px;
+			height: 18px;
+			background: url(../images/svg/tooggler-white.svg) right center no-repeat;
+			background-size: contain;
+		}
+	}
+
+	&-ava {
+		overflow: hidden;
+		border-radius: 50%;
+
+		img {
+			display: block;
+			border-radius: 26px;
+		}
+	}
+}

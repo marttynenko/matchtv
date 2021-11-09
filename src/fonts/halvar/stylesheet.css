@@ -1,0 +1,364 @@
+@font-face {
+    font-family: 'Halvar Mittel Blk';
+    src: url('HalvarMittel-BlkSlanted.eot');
+    src: local('Halvar Mittelschrift Black Slanted'), local('HalvarMittel-BlkSlanted'),
+        url('HalvarMittel-BlkSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-BlkSlanted.woff2') format('woff2'),
+        url('HalvarMittel-BlkSlanted.woff') format('woff'),
+        url('HalvarMittel-BlkSlanted.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Blk SuSlanted';
+    src: url('HalvarMittel-BlkSuSlanted.eot');
+    src: local('Halvar Mittelschrift Black SuperSlanted'), local('HalvarMittel-BlkSuSlanted'),
+        url('HalvarMittel-BlkSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-BlkSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-BlkSuSlanted.woff') format('woff'),
+        url('HalvarMittel-BlkSuSlanted.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg';
+    src: url('HalvarMittel-Bd.eot');
+    src: local('Halvar Mittelschrift Bold'), local('HalvarMittel-Bd'),
+        url('HalvarMittel-Bd.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Bd.woff2') format('woff2'),
+        url('HalvarMittel-Bd.woff') format('woff'),
+        url('HalvarMittel-Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XTh SuSlanted';
+    src: url('HalvarMittel-XThSuSlanted.eot');
+    src: local('Halvar Mittelschrift ExtraThin SuperSlanted'), local('HalvarMittel-XThSuSlanted'),
+        url('HalvarMittel-XThSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XThSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-XThSuSlanted.woff') format('woff'),
+        url('HalvarMittel-XThSuSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XBd SuSlanted';
+    src: url('HalvarMittel-XBdSuSlanted.eot');
+    src: local('Halvar Mittelschrift ExtraBold SuperSlanted'), local('HalvarMittel-XBdSuSlanted'),
+        url('HalvarMittel-XBdSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XBdSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-XBdSuSlanted.woff') format('woff'),
+        url('HalvarMittel-XBdSuSlanted.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XBd';
+    src: url('HalvarMittel-XBdSlanted.eot');
+    src: local('Halvar Mittelschrift ExtraBold Slanted'), local('HalvarMittel-XBdSlanted'),
+        url('HalvarMittel-XBdSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XBdSlanted.woff2') format('woff2'),
+        url('HalvarMittel-XBdSlanted.woff') format('woff'),
+        url('HalvarMittel-XBdSlanted.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XTh';
+    src: url('HalvarMittel-XTh.eot');
+    src: local('Halvar Mittelschrift ExtraThin'), local('HalvarMittel-XTh'),
+        url('HalvarMittel-XTh.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XTh.woff2') format('woff2'),
+        url('HalvarMittel-XTh.woff') format('woff'),
+        url('HalvarMittel-XTh.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XBd';
+    src: url('HalvarMittel-XBd.eot');
+    src: local('Halvar Mittelschrift ExtraBold'), local('HalvarMittel-XBd'),
+        url('HalvarMittel-XBd.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XBd.woff2') format('woff2'),
+        url('HalvarMittel-XBd.woff') format('woff'),
+        url('HalvarMittel-XBd.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel XTh';
+    src: url('HalvarMittel-XThSlanted.eot');
+    src: local('Halvar Mittelschrift ExtraThin Slanted'), local('HalvarMittel-XThSlanted'),
+        url('HalvarMittel-XThSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-XThSlanted.woff2') format('woff2'),
+        url('HalvarMittel-XThSlanted.woff') format('woff'),
+        url('HalvarMittel-XThSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg';
+    src: url('HalvarMittel-BdSlanted.eot');
+    src: local('Halvar Mittelschrift Bold Slanted'), local('HalvarMittel-BdSlanted'),
+        url('HalvarMittel-BdSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-BdSlanted.woff2') format('woff2'),
+        url('HalvarMittel-BdSlanted.woff') format('woff'),
+        url('HalvarMittel-BdSlanted.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Blk';
+    src: url('HalvarMittel-Blk.eot');
+    src: local('Halvar Mittelschrift Black'), local('HalvarMittel-Blk'),
+        url('HalvarMittel-Blk.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Blk.woff2') format('woff2'),
+        url('HalvarMittel-Blk.woff') format('woff'),
+        url('HalvarMittel-Blk.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg SuSlanted';
+    src: url('HalvarMittel-BdSuSlanted.eot');
+    src: local('Halvar Mittelschrift Bold SuperSlanted'), local('HalvarMittel-BdSuSlanted'),
+        url('HalvarMittel-BdSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-BdSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-BdSuSlanted.woff') format('woff'),
+        url('HalvarMittel-BdSuSlanted.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Lt';
+    src: url('HalvarMittel-Lt.eot');
+    src: local('Halvar Mittelschrift Light'), local('HalvarMittel-Lt'),
+        url('HalvarMittel-Lt.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Lt.woff2') format('woff2'),
+        url('HalvarMittel-Lt.woff') format('woff'),
+        url('HalvarMittel-Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Hl';
+    src: url('HalvarMittel-Hl.eot');
+    src: local('Halvar Mittelschrift Hairline'), local('HalvarMittel-Hl'),
+        url('HalvarMittel-Hl.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Hl.woff2') format('woff2'),
+        url('HalvarMittel-Hl.woff') format('woff'),
+        url('HalvarMittel-Hl.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Md SuSlanted';
+    src: url('HalvarMittel-MdSuSlanted.eot');
+    src: local('Halvar Mittelschrift Medium SuperSlanted'), local('HalvarMittel-MdSuSlanted'),
+        url('HalvarMittel-MdSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-MdSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-MdSuSlanted.woff') format('woff'),
+        url('HalvarMittel-MdSuSlanted.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Hl';
+    src: url('HalvarMittel-Hl_1.eot');
+    src: local('Halvar Mittelschrift Hairline'), local('HalvarMittel-Hl'),
+        url('HalvarMittel-Hl_1.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Hl_1.woff2') format('woff2'),
+        url('HalvarMittel-Hl_1.woff') format('woff'),
+        url('HalvarMittel-Hl_1.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg';
+    src: url('HalvarMittel-Rg.eot');
+    src: local('Halvar Mittelschrift Regular'), local('HalvarMittel-Rg'),
+        url('HalvarMittel-Rg.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Rg.woff2') format('woff2'),
+        url('HalvarMittel-Rg.woff') format('woff'),
+        url('HalvarMittel-Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Lt';
+    src: url('HalvarMittel-LtSlanted.eot');
+    src: local('Halvar Mittelschrift Light Slanted'), local('HalvarMittel-LtSlanted'),
+        url('HalvarMittel-LtSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-LtSlanted.woff2') format('woff2'),
+        url('HalvarMittel-LtSlanted.woff') format('woff'),
+        url('HalvarMittel-LtSlanted.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Lt SuSlanted';
+    src: url('HalvarMittel-LtSuSlanted.eot');
+    src: local('Halvar Mittelschrift Light SuperSlanted'), local('HalvarMittel-LtSuSlanted'),
+        url('HalvarMittel-LtSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-LtSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-LtSuSlanted.woff') format('woff'),
+        url('HalvarMittel-LtSuSlanted.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg';
+    src: url('HalvarMittel-RgSlanted.eot');
+    src: local('Halvar Mittelschrift Regular Slanted'), local('HalvarMittel-RgSlanted'),
+        url('HalvarMittel-RgSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-RgSlanted.woff2') format('woff2'),
+        url('HalvarMittel-RgSlanted.woff') format('woff'),
+        url('HalvarMittel-RgSlanted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Rg SuSlanted';
+    src: url('HalvarMittel-RgSuSlanted.eot');
+    src: local('Halvar Mittelschrift Regular SuperSlanted'), local('HalvarMittel-RgSuSlanted'),
+        url('HalvarMittel-RgSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-RgSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-RgSuSlanted.woff') format('woff'),
+        url('HalvarMittel-RgSuSlanted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Th SuSlanted';
+    src: url('HalvarMittel-ThSuSlanted.eot');
+    src: local('Halvar Mittelschrift Thin SuperSlanted'), local('HalvarMittel-ThSuSlanted'),
+        url('HalvarMittel-ThSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-ThSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-ThSuSlanted.woff') format('woff'),
+        url('HalvarMittel-ThSuSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Th';
+    src: url('HalvarMittel-ThSlanted.eot');
+    src: local('Halvar Mittelschrift Thin Slanted'), local('HalvarMittel-ThSlanted'),
+        url('HalvarMittel-ThSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-ThSlanted.woff2') format('woff2'),
+        url('HalvarMittel-ThSlanted.woff') format('woff'),
+        url('HalvarMittel-ThSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Th';
+    src: url('HalvarMittel-Th.eot');
+    src: local('Halvar Mittelschrift Thin'), local('HalvarMittel-Th'),
+        url('HalvarMittel-Th.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Th.woff2') format('woff2'),
+        url('HalvarMittel-Th.woff') format('woff'),
+        url('HalvarMittel-Th.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Md';
+    src: url('HalvarMittel-MdSlanted.eot');
+    src: local('Halvar Mittelschrift Medium Slanted'), local('HalvarMittel-MdSlanted'),
+        url('HalvarMittel-MdSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-MdSlanted.woff2') format('woff2'),
+        url('HalvarMittel-MdSlanted.woff') format('woff'),
+        url('HalvarMittel-MdSlanted.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Md';
+    src: url('HalvarMittel-Md.eot');
+    src: local('Halvar Mittelschrift Medium'), local('HalvarMittel-Md'),
+        url('HalvarMittel-Md.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-Md.woff2') format('woff2'),
+        url('HalvarMittel-Md.woff') format('woff'),
+        url('HalvarMittel-Md.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Hl';
+    src: url('HalvarMittel-HlSlanted.eot');
+    src: local('Halvar Mittelschrift Hairline Slanted'), local('HalvarMittel-HlSlanted'),
+        url('HalvarMittel-HlSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-HlSlanted.woff2') format('woff2'),
+        url('HalvarMittel-HlSlanted.woff') format('woff'),
+        url('HalvarMittel-HlSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittel Hl SuSlanted';
+    src: url('HalvarMittel-HlSuSlanted.eot');
+    src: local('Halvar Mittelschrift Hairline SuperSlanted'), local('HalvarMittel-HlSuSlanted'),
+        url('HalvarMittel-HlSuSlanted.eot?#iefix') format('embedded-opentype'),
+        url('HalvarMittel-HlSuSlanted.woff2') format('woff2'),
+        url('HalvarMittel-HlSuSlanted.woff') format('woff'),
+        url('HalvarMittel-HlSuSlanted.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

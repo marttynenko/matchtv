@@ -1,0 +1,131 @@
+<div class="mfp-popup zoom-anim-dialog popup-register">
+  <div class="h2 mfp-popup-title">Регистрация</div>
+
+  <p class="mfp-popup-aftertitle">Уже есть аккаунт? <a href="javascript:void(0)" data-href="ajax/popup-auth.html" class="ajax-mfp">Авторизация</a></p>
+
+  <form id="form_register">
+    <div class="popup-register-dashtitle">Общие данные</div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <label for="email" class="ui-label">Ваш e-mail (логин)</label>
+          <input type="email" name="email" class="ui-input" required>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <label for="phone" class="ui-label">Номер телефона</label>
+          <input type="tel" name="phone" class="ui-input" required>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <label for="manager" class="ui-label">ФИО контактного лица</label>
+          <input type="text" name="manager" class="ui-input" required>
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <label for="password" class="ui-label">Пароль</label>
+          <input type="password" name="password" class="ui-input" minlength="6" required>
+        </div>
+      </div>
+    </div><!--.row-->
+    
+    <div class="popup-register-dashtitle">Данные организации</div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">Название организации</div>
+          <input type="text" class="ui-input" name="organization">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">Юр. адрес</div>
+          <input type="text" class="ui-input" name="orgadres">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">УНП</div>
+          <input type="text" class="ui-input" name="unp">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">Пункт разгрузки</div>
+          <input type="text" class="ui-input" name="cargo">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">ФИО руководителя</div>
+          <input type="text" class="ui-input" name="director">
+        </div>
+      </div>
+
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">На основании чего действует</div>
+          <input type="text" class="ui-input" name="document">
+        </div>
+      </div>
+    </div><!--.row-->
+
+    <div class="popup-register-dashtitle">Платежные данные</div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">Наименование банка</div>
+          <input type="text" class="ui-input" name="bankname">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">Адрес банка</div>
+          <input type="text" class="ui-input" name="bankadres">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">BIC</div>
+          <input type="text" class="ui-input" name="bancbic">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="ui-field">
+          <div class="ui-label">IBAN</div>
+          <input type="text" class="ui-input" name="bankiban">
+        </div>
+      </div>
+    </div>
+  
+
+    <div class="ui-field-btn ui-centered">
+      <button class="btn">Зарегистрироваться</button>
+    </div>
+  </form>
+
+  <script>
+    jQuery(document).ready(function($){
+      $('#form_register').validate({
+        rules: {
+          email: {
+            email: true
+          },
+          phone: {
+            telephone: true
+          }
+        },
+        // submitHandler: function(form,event){
+        //   event.preventDefault();
+        //   // ajax post data
+        // }
+      })
+    });
+  </script>
+</div>

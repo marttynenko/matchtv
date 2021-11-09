@@ -1,0 +1,351 @@
+/* MFP
+---------------------------*/
+.black-popup {
+  background: #858585;
+}
+.mfp-popup {
+  background: #FFF;
+  position: relative;
+  padding: 40px 55px;
+  border-radius: 5px;
+  width: 96%;
+  max-width: 480px;
+  margin: 20px auto;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 1.1;
+  }
+  &-aftertitle {
+    margin-top: -10px;
+    margin-bottom: 22px;
+    text-align: center;
+    padding: 0px 15px;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.popup-auth {
+  padding-bottom: 50px;
+
+  &-recovery {
+    padding-top: 5px;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .btn {
+    min-width: 200px;
+  }
+}
+.popup-register {
+  padding-bottom: 50px;
+  max-width: 800px;
+
+  &-auth {
+    margin-top: -12px;
+    
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &-dashtitle {
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $secondary;
+    text-align: center;
+  }
+  .ui-field-btn {
+    padding-top: 20px;
+  }
+}
+.popup-recovery {
+  .h2, h2 {
+    @include fz(32);
+  }
+  &-hint {
+    margin-top: -12px;
+    text-align: center;
+  }
+}
+
+.mfp-bg {
+	background: #000;
+}
+.mfp-container {
+  padding: 0;
+}
+.mfp-iframe-holder .mfp-close {
+  right: 0;
+  width: 24px;
+
+  &:after,
+  &:before {
+    background: #FFF;
+  }
+
+  &:hover {
+    &:after,
+    &:before {
+      background: #000;
+    }
+  }
+}
+button.mfp-close {
+  font-size: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 15px !important;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  background: none;
+  border: 0 !important;
+  padding: 0 !important;
+  cursor: pointer;
+  opacity: 1;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 0;
+    right: 0;
+    background: #b4b4b4;
+    border-radius: 1px;
+    -webkit-transition: transform .35s, background .35s;
+    -moz-transition: transform .35s, background .35s;
+    -ms-transition: transform .35s, background .35s;
+    -o-transition: transform .35s, background .35s;
+    transition: transform .35s, background .45s;
+  }
+  &:before {
+    // @include transform(rotate(45deg));
+    transform: rotate(45deg);
+  }
+  &:after {
+    // @include transform(rotate(-45deg));
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    &:before, &:after {
+      background: $primary;
+    }
+    &:before {
+      // @include transform(rotate(135deg));
+      transform: rotate(135deg);
+    }
+    &:after {
+      // @include transform(rotate(-135deg));
+      transform: rotate(-135deg);
+    }
+  }
+}
+.mfp-gallery .mfp-bottom-bar {
+  display: none;
+}
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer;
+}
+.mfp-gallery button.mfp-close {
+  display: none;
+}
+.mfp-gallery .mfp-close {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #FFF;
+  opacity: 1;
+  top: -25px;
+  right: -25px;
+  // @include border-radius(50%);
+  cursor: pointer;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 10px;
+    right: 10px;
+    background: #555;
+    -webkit-transition: transform .35s, background .35s;
+    -moz-transition: transform .35s, background .35s;
+    -ms-transition: transform .35s, background .35s;
+    -o-transition: transform .35s, background .35s;
+    transition: transform .35s, background .45s;
+  }
+  &:before {
+    // @include transform(rotate(45deg));
+  }
+  &:after {
+    // @include transform(rotate(-45deg));
+  }
+  &:hover {
+    &:before, &:after {
+      background: #000;
+    }
+    &:before {
+      // @include transform(rotate(135deg));
+    }
+    &:after {
+      // @include transform(rotate(-135deg));
+    }
+  }
+}
+.mfp-gallery .mfp-content {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.mfp-gallery img.mfp-img {
+  padding: 0;
+  border: 10px solid #FFF;
+}
+.mfp-arrow {
+  opacity: 1;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-transition: background .3s, transform .3s;
+  -moz-transition: background .3s, transform .3s;
+  -ms-transition: background .3s, transform .3s;
+  -o-transition: background .3s, transform .3s;
+  transition: background .3s, transform .3s;
+
+  &:before {
+    display: none;
+  }
+  &:after {
+    // @include transition(transform .2s);
+  }
+
+  &:hover {
+    opacity: 1;
+    background: #FFF;
+
+    &:after {
+      // @include transform(scale(0.8));
+    }
+  }
+}
+.mfp-arrow {
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.5);
+  // @include border-radius(50%);
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 0;
+    padding: 0;
+  }
+}
+.mfp-arrow-left {
+  left: 10px;
+
+  &:after {
+    left: -2px;
+    /*@include sprite($arrow-left-black);*/
+  }
+}
+.mfp-arrow-right {
+  right: 10px;
+
+  &:after {
+    right: -2px;
+    /*@include sprite($arrow-right-black);*/
+  }
+}
+
+
+
+/* MFP Animations
+---------------------------*/
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all .3s .45s ease-in-out; 
+  -moz-transition: all .3s .45s ease-in-out;
+  -ms-transition: all .3s .45s ease-in-out;
+  -o-transition: all .3s .45s ease-in-out; 
+  transition: all .3s .45s ease-in-out; 
+  -webkit-transform: scale(0.75); 
+  -moz-transform: scale(0.75); 
+  -ms-transform: scale(0.75); 
+  -o-transform: scale(0.75); 
+  transform: scale(0.75);
+}
+.not_delay .my-mfp-zoom-in .zoom-anim-dialog,
+.my-mfp-zoom-in .zoom-anim-dialog.not_delay {
+  animation-delay: 0s !important;
+   -webkit-transition: all .3s 0s ease-in-out; 
+  -moz-transition: all .3s 0s ease-in-out; 
+  -o-transition: all .3s 0s ease-in-out;
+  -ms-transition: all .3s 0s ease-in-out;
+  transition: all .3s 0s ease-in-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: scale(1); 
+  -moz-transform: scale(1); 
+  -ms-transform: scale(1); 
+  -o-transform: scale(1); 
+  transform: scale(1);
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  -webkit-transform: scale(0.75); 
+  -moz-transform: scale(0.75); 
+  -ms-transform: scale(0.75); 
+  -o-transform: scale(0.75); 
+  transform: scale(0.75);
+  opacity: 0;
+}
+/* Dark overlay, start state */
+.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease; 
+  -moz-transition: opacity 0.3s ease; 
+  -o-transition: opacity 0.3s ease; 
+  transition: opacity 0.3s ease;
+}
+/* animate in */
+.mfp-bg.mfp-ready {
+  opacity: 0.9;
+}
+/* animate out */
+.mfp-removing.mfp-bg {
+  opacity: 0;
+}

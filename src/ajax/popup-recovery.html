@@ -1,0 +1,33 @@
+<div class="mfp-popup zoom-anim-dialog popup-recovery">
+  <div class="h2 mfp-popup-title">Восстановление пароля</div>
+
+  <p class="mfp-popup-aftertitle">Введите свой email, мы отправим ссылку для смены пароля</p>
+  
+  <form id="form_recovery">
+    <div class="ui-field">
+      <label for="email" class="ui-label">Ваш e-mail</label>
+      <input type="email" name="email" class="ui-input" required placeholder="например: ivanov@mail.ru">
+    </div>
+
+    <div class="ui-field ui-field-btn ui-centered">
+      <button class="btn">Получить ссылку</button>
+    </div>
+
+    <div class="ui-centered popup-recovery-auth">Я вспомнил пароль! <a href="javascript:void(0)" data-href="ajax/popup-auth.html" class="ajax-mfp">Войти</a></div>
+
+  </form>
+
+  <script>
+    jQuery(document).ready(function($){
+      $('#form_recovery').validate({
+        rules: {
+          email: {email: true}
+        },
+        // submitHandler: function(form,event){
+        //   event.preventDefault();
+        //   // ajax post data
+        // }
+      })
+    });
+  </script>
+</div>

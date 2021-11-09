@@ -1,0 +1,38 @@
+<div class="mfp-popup zoom-anim-dialog popup-auth">
+  <div class="h2 mfp-popup-title">Авторизация</div>
+
+  <div class="mfp-popup-aftertitle">Войдите или <a href="javascript:void(0)" data-href="ajax/popup-register.html" class="ajax-mfp">зарегистрируйтесь</a></div>
+
+  <form id="form_auth">
+    <div class="ui-field">
+      <label for="email" class="ui-label">Ваш e-mail</label>
+      <input type="email" name="email" class="ui-input" required placeholder="например: ivanov@mail.ru">
+    </div>
+
+    <div class="ui-field">
+      <label for="password" class="ui-label">Пароль</label>
+      <input type="password" name="password" class="ui-input" minlength="6" required placeholder="например: 23xXsQ_10">
+    </div>
+
+    <div class="ui-field ui-field-btn ui-centered">
+      <button class="btn">Войти</button>
+    </div>
+
+    <div class="ui-centered popup-auth-recovery">Забыли пароль? <a href="javascript:void(0)" data-href="ajax/popup-recovery.html" class="ajax-mfp">Восстановить</a></div>
+
+  </form>
+
+  <script>
+    jQuery(document).ready(function($){
+      $('#form_auth').validate({
+        rules: {
+          email: {email: true}
+        },
+        // submitHandler: function(form,event){
+        //   event.preventDefault();
+        //   // ajax post data
+        // }
+      })
+    });
+  </script>
+</div>
